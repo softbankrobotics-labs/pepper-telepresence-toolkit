@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pepper Telepresence</string>
+    <string name="room_status">Status</string>
+    <string name="room_recording">This application is currently using the Camera and Microphone</string>
+    <string name="permissions_needed">Camera and Microphone permissions needed. Please allow in App Settings for additional functionality.</string>
+
+    <string name="room_connected">Connected to room</string>
+    <string name="room_reconnecting">Reconnecting to room</string>
+    <string name="room_disconnected">Disconnected from room</string>
+
+    <string name="login">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_title">Login</string>
+    <string name="login_hint">Log in with your email and password</string>
+    <string name="logout">Logout</string>
+    <string name="connect">Connect to a Room</string>
+    <string name="room_name">Enter Room Name</string>
+    <string name="button_connect">Connect</string>
+    <string name="email_error">Please provide a valid email address</string>
+    <string name="password_error">Please provide a password</string>
+    <string name="username">Username</string>
+    <string name="room_name_length">Room name must have at least 20 characters</string>
+
+</resources>

@@ -45,6 +45,3 @@ web/public/index.js
 
 #Visual Studio Code
 *.code-workspace
-
-#google services
-android/app-telepresence/
