@@ -1,0 +1,45 @@
+{
+  "name": "video-quickstart-js",
+  "version": "1.0.0-dev",
+  "description": "Pepper Telepresence for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/index.js > public/index.js",
+    "clean": "rimraf public/index.js",
+    "start": "npm run clean && npm run build && npx serve -c serve_local.json",
+    "firebase_local": "npm run clean && npm run build && firebase serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "twilio",
+    "video",
+    "chat",
+    "ip",
+    "real",
+    "time",
+    "diggity"
+  ],
+  "author": "DXTeam (from Twilio quickstart)",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "prismjs": "^1.6.0",
+    "stackblur-canvas": "^1.4.0",
+    "twilio": "^3.19.1",
+    "twilio-video": "^2.4.0",
+    "firebase": "^7.15.4",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "copyfiles": "^1.2.0",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1"
+  }
+}

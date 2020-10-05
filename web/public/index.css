@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+#overpanel {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#overpanel #media-container {
+    box-shadow: none;
+}
+
+
+.mainframe {
+  overflow-y: scroll;
+  height: 840px;
+}
+
+html, body, #main_panel {
+    height: 100%;
+    overflow: hidden;
+}
+
+html > body {
+  background: #F0F0F0 0% 0% no-repeat padding-box;
+}
+
+#login-entry, #password-entry, #user-name-entry {
+    display: none;
+}
+
+/* Enter room name page */
+
+#join_panel {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#welcome-text p.instructions {
+  text-align: center;
+  font-size: 2.5em;
+  color: #013965;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#computer-img-container {
+  align-self: center;
+  padding: 20px;
+}
+
+#computer-img {
+  height: 130px;
+}
+
+#room-name-container {
+  display: flex;
+  align-self: center;
+}
+
+#room-name-entry {
+}
+
+#text-entry-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#room-instructions-container{
+  width: 300px;
+  align-self: center;
+}
+
+#room-instructions-container p.instructions {
+  font-size: 0.8em;
+  color: #013965;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+}
+
+#join-btn {
+  height: 120px;
+  margin-left: 20px;
+}
+
+#join-btn:focus {
+  outline: none;
+}
+
+.text-input {
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: inset 0 0 10px rgba(220,220,220,1);
+  padding: 5px 5px 5px 10px;
+  border-width: 0;
+  background-color: #F0F0F0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#main_panel {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.robot-interaction {
+  filter: blur(3px);
+}
+
+/* Left Panel */
+
+#left_panel {
+  padding: 30px 0px 30px 30px;
+}
+
+#room-controls {
+    min-height: 600px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*#room-name {
+    margin-bottom: 6px;
+}*/
+
+#left_panel p.instructions {
+  text-align: right;
+  font-size: 2em;
+  color: #013965;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+#button-leave {
+  height: 78px;
+  align-self: flex-end;
+}
+
+#button-leave:focus {
+  outline: none;
+}
+
+#button-switch-camera {
+  height: 150px;
+  align-self: flex-end;
+  display: none;
+}
+
+#button-switch-camera:focus {
+  outline: none;
+}
+
+#camera-hint {
+  width: 150px;
+  align-self: flex-end;
+  display: none;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+#camera-controls {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    display:none;
+}
+
+#camera-arrow {
+  height: 40px;
+  align-self: flex-end;
+}
+
+.tourner_help {
+  color: #0285AD;
+  width: 70%;
+  margin: 0;
+  font-size: 0.9em;
+  margin-right: 10px;
+  text-align: right;
+  align-self: flex-end;
+  font-family: 'Varela Round', sans-serif;
+}
+
+/* Right Panel */
+
+#middle_panel {
+    display: flex;
+    flex-direction: column;
+}
+
+#media-container {
+  position: relative;
+  background: #F0F0F0;
+  border-radius: 30px;
+  margin: 30px;
+  opacity: 1;
+  box-shadow: -10px -10px 30px 10px rgba(255,255,255,1);
+  padding: 20px;
+}
+
+div#remote-media {
+  flex-grow: 4;
+  justify-content: center;
+  background-color: #fff;
+  text-align: center;
+  min-width: 800px;
+  min-height: 600px;
+  border-radius: 13px;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+#participantContainer {
+  min-width: 800px;
+  min-height: 600px;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  background: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  color: #013965;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+div#remote-media video {
+  min-width: 800px;
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  background-color: lightgrey !important;
+  background-position: 50%;
+}
+
+#local-media {
+  width: 270px;
+  height: 202px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 25px;
+  background-color: #F0F0F0 !important;
+}
+
+#local-media video {
+  max-width: 100%;
+  border: none;
+  border-radius: 25px;
+}
+
+/* Bottom Controls */
+
+#controls {
+  margin-top: -50px;
+  width: 80%;
+  display: none;
+  flex-direction: column;
+  align-self: center;
+}
+
+#controls input:focus {
+  outline: none;
+}
+
+#top-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#forward {
+  height: 130px;
+}
+
+.direction-button {
+  height: 100px;
+  margin-top: auto;
+}
+
+#bottom-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.direction-button-small {
+  height: 70px;
+}
+
+#strafeleft {
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+#backward {
+  margin-top: 20px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+
+#straferight {
+  transform: matrix(0, 1, -1, 0, 0, 0);
+}

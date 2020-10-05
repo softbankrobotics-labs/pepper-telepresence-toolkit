@@ -1,0 +1,6 @@
+rootProject.name='PepperTelepresence'
+include ':app-telepresence'
+include ':app-remote-control'
+include ':remotevideo'
+include ':helpers'
+include ':pepper-telepresence-control'
